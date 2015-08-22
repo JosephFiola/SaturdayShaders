@@ -1,0 +1,4 @@
+.DS_Store
+/Unity3D/*
+!/Unity3D/Assets
+*.meta

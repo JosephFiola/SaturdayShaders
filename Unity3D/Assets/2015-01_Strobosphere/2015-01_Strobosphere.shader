@@ -1,4 +1,4 @@
-﻿//#SaturdayShaders
+﻿//#SaturdayShaders week 1
 //2015-01_Strobosphere
 //by VJZEF (Joseph Fiola) - visit VJZEF.com & JoeFiola.com
 

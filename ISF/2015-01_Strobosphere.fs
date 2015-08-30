@@ -1,10 +1,10 @@
-//#SaturdayShaders
-//2015-01
+//#SaturdayShader
+//2015-01 StroboSphere
 //Based on code from http://patriciogonzalezvivo.com/2015/thebookofshaders/07/
 
 
 /*{
-	"CREDIT": "VJZEF",
+	"CREDIT": "by vjzef",
 	"DESCRIPTION": "Stroboscopic sphere",
 	"CATEGORIES": [
 			"Generator"						

@@ -2,3 +2,8 @@
 /Unity3D/*
 !/Unity3D/Assets
 *.meta
+Exports
+Audio
+Unity3D/Assets/.DS_Store
+
+Unity3D/Assets/.DS_Store

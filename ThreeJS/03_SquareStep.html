@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Week 03: SquareStep</title>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="container"></div>
+        <script src="js/three.min.js"></script>
+        
+        <script id="vertexShader" type="x-shader/x-vertex">
+            void main() {
+                gl_Position = vec4( position, 1.0 );
+            }
+        </script>
+
+        <script id="fragmentShader" type="x-shader/x-fragment">
+            uniform vec2 u_resolution;
+            uniform float u_time;
+            float left;
+            float right;
+            float top;
+            float bottom;
+            float speed;
+
+            #ifdef GL_ES
+            precision mediump float;
+            #endif
+
+
+            void main() {
+            
+                vec2 st = gl_FragCoord.xy/u_resolution;
+
+                speed = 0.2;
+                left = abs(sin(u_time * speed )-0.1);
+                right = abs(sin(u_time * speed)+0.1);
+                top = 0.35;
+                bottom = 0.65;
+
+                float y;
+                if(right > left){
+                    y = step(st.x,right) * step(left, st.x);
+                } else if(right < left){
+                    y = step(st.x,left) * step(right, st.x);    
+                }
+                float x;
+                if(top>bottom){
+                    x = step(st.y, top) * step(bottom, st.y);
+                } else if(top < bottom){
+                    x = step(st.y, bottom) * step(top, st.y);
+                    
+                }  
+
+                vec3 color = vec3(y * x);
+
+                gl_FragColor = vec4(color,1.0);
+            }
+
+
+        </script>
+
+        <script>
+          //  if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+            var container;
+            var camera, scene, renderer;
+            var uniforms;
+
+            init();
+            animate();
+
+            function init() {
+                container = document.getElementById( 'container' );
+
+                camera = new THREE.Camera();
+                camera.position.z = 1;
+
+                scene = new THREE.Scene();
+
+                var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
+
+                uniforms = {
+                    u_time: { type: "f", value: 1.0 },
+                    u_resolution: { type: "v2", value: new THREE.Vector2() }
+                };
+
+                var material = new THREE.ShaderMaterial( {
+                    uniforms: uniforms,
+                    vertexShader: document.getElementById( 'vertexShader' ).textContent,
+                    fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+                } );
+
+                var mesh = new THREE.Mesh( geometry, material );
+                scene.add( mesh );
+
+                renderer = new THREE.WebGLRenderer();
+                renderer.setPixelRatio( window.devicePixelRatio );
+
+                container.appendChild( renderer.domElement );
+
+                onWindowResize();
+                window.addEventListener( 'resize', onWindowResize, false );
+            }
+
+            function onWindowResize( event ) {
+                renderer.setSize( window.innerWidth, window.innerHeight );
+                uniforms.u_resolution.value.x = renderer.domElement.width;
+                uniforms.u_resolution.value.y = renderer.domElement.height;
+            }
+
+            function animate() {
+                requestAnimationFrame( animate );
+                render();
+            }
+
+            function render() {
+                uniforms.u_time.value += 0.05;
+                renderer.render( scene, camera );
+            }
+        </script>
+
+<pre>
+uniform vec2 u_resolution;
+uniform float u_time;
+float left;
+float right;
+float top;
+float bottom;
+float speed;
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+
+void main() {
+
+    vec2 st = gl_FragCoord.xy/u_resolution;
+
+    speed = 0.2;
+    left = abs(sin(u_time * speed )-0.1);
+    right = abs(sin(u_time * speed)+0.1);
+    top = 0.35;
+    bottom = 0.65;
+
+    float y;
+    if(right > left){
+        y = step(st.x,right) * step(left, st.x);
+    } else if(right < left){
+        y = step(st.x,left) * step(right, st.x);    
+    }
+    float x;
+    if(top>bottom){
+        x = step(st.y, top) * step(bottom, st.y);
+    } else if(top < bottom){
+        x = step(st.y, bottom) * step(top, st.y);
+        
+    }  
+
+    vec3 color = vec3(y * x);
+
+    gl_FragColor = vec4(color,1.0);
+}
+</pre>
+
+
+    </body>
+</html>
+

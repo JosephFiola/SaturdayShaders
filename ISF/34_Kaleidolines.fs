@@ -109,7 +109,7 @@ float segment(vec2 p, vec2 a, vec2 b) {
     vec2 ab = b - a;
     vec2 ap = p - a;
     float k = clamp(dot(ap, ab)/dot(ab, ab), 0.0, lineLength);
-    return smoothstep(0.0, lineThickness/RENDERSIZE.y, length(ap - k*ab) - (0.001 * lineThickness * 10. ));
+    return smoothstep(0.0, 0.003 + lineThickness/RENDERSIZE.y, length(ap - k*ab) - (0.001 * lineThickness * 5. ));
 }
 
 float shape(vec2 p, float angle) {

@@ -4,14 +4,14 @@ These are GLSL shaders in the [ISF format](https://vidvox.github.io/isf/), confi
 
  
 ## Some examples of Saturday Shaders from the ISF sharing site
-<img src="images/SaturdayShader_Week15_Goto10.png" alt="Week 15: Goto10" width="400"/>  
-[<sup>Week 15: Goto10</sup>](https://www.interactiveshaderformat.com/sketches/696)
+![Week 15: Goto10](images/SaturdayShader_Week15_Goto10.png)
+[Week 15: Goto10](https://www.interactiveshaderformat.com/sketches/696)
 
-<img src="images/SaturdayShader_Week23_DiscSpin.jpg" alt="Week 23: DiscSpin" width="400"/>  
-[<sup>Week 23: DiscSpin</sup>](https://www.interactiveshaderformat.com/sketches/839)
+![Week 23: DiscSpin] (images/SaturdayShader_Week23_DiscSpin.jpg) 
+[Week 23: DiscSpin](https://www.interactiveshaderformat.com/sketches/839)
 
-<img src="images/SaturdayShader_Week40_Matrix.png" alt="Week 40: Matrix" width="400"/>  
-[<sup>Week 40: Matrix</sup>](https://www.interactiveshaderformat.com/sketches/1219)
+![Week 40: Matrix](images/SaturdayShader_Week40_Matrix.png)
+[Week 40: Matrix](https://www.interactiveshaderformat.com/sketches/1219)
 
 ---
 

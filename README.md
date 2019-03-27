@@ -20,20 +20,18 @@ With minor adjustments they could be made to work in any application which suppo
   
 
 ## Some examples of Saturday Shaders from the ISF sharing site
-<img src="https://images.squarespace-cdn.com/content/50169cf884ae68067baa7365/1553194862021-MYO4N900B4A9ABNM3B6N/750w" alt="Week 15: Goto10" width=400/>  
+<img src="https://images.squarespace-cdn.com/content/50169cf884ae68067baa7365/1553194862021-MYO4N900B4A9ABNM3B6N/750w" alt="Week 15: Goto10" width="400"/>  
 <sup>[Week 15: Goto10](https://www.interactiveshaderformat.com/sketches/696)</sup>
 
-<img src="https://images.squarespace-cdn.com/content/50169cf884ae68067baa7365/1553194795874-UW0YW5RI5MUYTWN11180/750w" alt="Week 23: DiscSpin" width=400/>  
+<img src="https://images.squarespace-cdn.com/content/50169cf884ae68067baa7365/1553194795874-UW0YW5RI5MUYTWN11180/750w" alt="Week 23: DiscSpin" width="400"/>  
 <sup>[Week 23: DiscSpin](https://www.interactiveshaderformat.com/sketches/839)</sup>
 
-<img src="https://images.squarespace-cdn.com/content/50169cf884ae68067baa7365/1553194742386-UV47JP09ZV7JH8NTGL8F/750w" alt="Week 40: Matrix" width=400/>  
-<sup>[Week 40: Matrix](https://www.interactiveshaderformat.com/sketches/1219)</sup>
-
+<img src="https://images.squarespace-cdn.com/content/50169cf884ae68067baa7365/1553194742386-UV47JP09ZV7JH8NTGL8F/750w" alt="Week 40: Matrix" width="400"/>  
+[Week 40: Matrix](https://www.interactiveshaderformat.com/sketches/1219)
 ---
 
 To read more on Saturday Shaders [see this article on the VDMX website](https://vdmx.vidvox.net/blog/vj-zef-saturday-shaders). 
  
 ---
-<sup>
+
 [VJ Zef](http://www.joefiola.com/vjzef/) || [Saturdayshaders](www.joefiola.com/saturdayshaders/) || [JoeFiola.com](http://www.joefiola.com/)
-</sup>
